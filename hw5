@@ -1,11 +1,11 @@
-Group Members: Abdullah Al Iman, Alicia Persad, Flamur Kukaj, Marvin Harricharran
+Group Members: Alicia Persad, Abdullah Al Iman, Flamur Kukaj, Marvin Harricharran
 
 The variables we focused on were Income and Education Level and the impact of Education Level on Income. The code for this goes as follows:
 
-load
-set.seed(12345)
 
 load("~/Library/Mobile Documents/com~apple~CloudDocs/B2000/Household_Pulse_data_ph4c2.RData")
+
+set.seed(12345)
 
 Household_Pulse_Filtered <- Household_Pulse_data %>%
   filter(ANYWORK == "yes employment in last 7 days" & !is.na(INCOME) & !is.na(EEDUC))
